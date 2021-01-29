@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appGridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:columnCount="3"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/chooseWebsiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:elevation="@dimen/elevation"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/textview_padding"
+        android:text="@string/choose_website"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/ucsdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:elevation="@dimen/elevation"
+        android:gravity="start"
+        android:padding="@dimen/textview_padding"
+        android:text="@string/ucsd_extension" />
+
+    <Button
+        android:id="@+id/ucsdButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go" />
+
+    <TextView
+        android:id="@+id/yahooTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:elevation="@dimen/elevation"
+        android:gravity="start"
+        android:padding="@dimen/textview_padding"
+        android:text="@string/yahoo" />
+
+    <Button
+        android:id="@+id/yahooButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go" />
+</GridLayout>
